@@ -127,13 +127,13 @@
                     oma kalendri. Näiteks kontoritöötajatel on üks kalender 
                     ja ehitusmeeskonnal teine. See aitab luua täpsema ajakava.
                 </p>
-            <div class="image-wrapper">
-                <img src="images/img5.png" alt="Kalendri kasutamine projektis">
-            </div>
+   <div class="image-wrapper">
+    <img src="images/img5.png" alt="Kalendri kasutamine projektis">
+</div>
 
-            <div class="image-wrapper">
-                <img src="images/img6.png" alt="Kalendri kasutamine projektis">
-            </div>
+<div class="image-wrapper">
+    <img src="images/img6.png" alt="Kalendri kasutamine projektis" class="zoom-img">
+</div>
             </div>
         </section>
 
@@ -162,5 +162,29 @@
     <p>Autor: Marek Lukk</p>
     <p>Lihtne juhend tudengitele ja alustavatele projektijuhtidele.</p>
 </footer>
+    <div id="imgModal" class="modal">
+    <span class="close-modal">&times;</span>
+    <img class="modal-content" id="modalImg">
+</div>
+
+<script>
+    const modal = document.getElementById("imgModal");
+    const modalImg = document.getElementById("modalImg");
+    const zoomImg = document.querySelector(".zoom-img");
+    const closeBtn = document.querySelector(".close-modal");
+
+    zoomImg.onclick = function () {
+        modal.style.display = "flex";
+        modalImg.src = this.src;
+    }
+
+    closeBtn.onclick = function () {
+        modal.style.display = "none";
+    }
+
+    modal.onclick = function (e) {
+        if (e.target === modal) modal.style.display = "none";
+    }
+</script>
 </body>
 </html>
