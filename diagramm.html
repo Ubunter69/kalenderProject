@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header class="hero">
+    <header class="hero" id="top">
         <nav class="main-nav">
             <div class="logo">MS Project</div>
             <ul class="nav-links">
@@ -16,46 +16,69 @@
                 <li><a href="diagramm.html" class="active-link">Diagrammid</a></li>
             </ul>
         </nav>
+
         <div class="hero-content">
-            <h1 class="fade-in">Diagrammide loomine Projectis</h1>
-            <p class="fade-in">Visualiseeri oma projekti käiku ja meeskonna koormust.</p>
+            <h1 class="fade-in">Diagrammid Microsoft Projectis</h1>
+            <p class="fade-in">Diagrammid on visuaalsed tööriistad, mis aitavad projektijuhtidel jälgida ajakava, ressursse ja töömahtu ühe pilguga.</p>
         </div>
     </header>
 
     <main>
         <section class="content-section fade-in">
             <div class="card">
-                <h2>Mis on diagrammid MS Projectis?</h2>
-                <p>Diagrammid on visuaalsed tööriistad, mis aitavad näha "suurt pilti". Kõige tuntum on Gantti diagramm, mis näitab ülesannete ajakava horisontaalselt.</p>
+                <h2>Miks kasutada diagramme?</h2>
+                <p>Microsoft Project pakub erinevaid vaateid (views), sest tekstist ja tabelist ei piisa alati keerulise projekti mõistmiseks. Diagrammid aitavad märgata vigu planeerimises, näha kriitilist teed ja vältida meeskonna ülekoormust.</p>
+            </div>
+        </section>
+
+        <section class="content-section fade-in">
+            <div class="card">
+                <h2>1. Gantti diagramm (Gantt Chart)</h2>
+                <p><strong>Mis see on:</strong> See on kõige populaarsem vaade projektijuhtimises. See näitab ülesandeid horisontaalse graafikuna ajajoonel.</p>
+                <p><strong>Kuidas avada:</strong> Vali ülemisest menüüst <strong>View > Gantt Chart</strong>.</p>
+                <p><strong>Milleks kasulik:</strong> Gantti diagramm näitab selgelt, millal ülesanded algavad ja lõppevad ning kuidas need on omavahel seotud (nooled ülesannete vahel). See aitab näha projekti üldist kestust.</p>
                 <div class="image-wrapper">
-                    <img src="images/diagramm1.png" alt="Gantt Chart">
+                    <img src="images/diagramm1.png" alt="Gantti diagramm MS Projectis">
                 </div>
             </div>
         </section>
 
         <section class="content-section fade-in">
             <div class="card">
-                <h2>Kuidas diagramme avada?</h2>
-                <p>Mine vahekaardile <strong>View</strong>. Sealt saad valida erinevaid diagramme nagu <em>Resource Graph</em> (meeskonna koormus) või <em>Network Diagram</em> (tegevuste ahel).</p>
+                <h2>2. Ressursside diagramm (Resource Graph)</h2>
+                <p><strong>Mis see on:</strong> See diagramm näitab visuaalselt ressursside (töötajate või seadmete) koormust konkreetsel ajahetkel.</p>
+                <p><strong>Kuidas avada:</strong> Vali menüüst <strong>View > Other Views > Resource Graph</strong>.</p>
+                <p><strong>Milleks kasulik:</strong> See on parim tööriist "ülekoormuse" (overallocation) leidmiseks. Kui tulp on punane, tähendab see, et töötajale on määratud rohkem tööd, kui ta suudab teha (nt 12 tundi 8-tunnise tööpäeva jooksul).</p>
                 <div class="image-wrapper">
-                    <img src="images/diagramm2.png" alt="Vaadete valik">
+                    <img src="images/diagramm2.png" alt="Ressursside diagramm">
+                </div>
+            </div>
+        </section>
+
+        <section class="content-section fade-in">
+            <div class="card">
+                <h2>3. Kasutuse diagrammid (Task & Resource Usage)</h2>
+                <p><strong>Mis see on:</strong> Need on detailsed vaated, mis kombineerivad tabeli ja kalendri. Task Usage näitab, millised ressursid töötavad ülesande kallal, ja Resource Usage näitab, milliseid ülesandeid üks inimene täidab.</p>
+                <p><strong>Kuidas avada:</strong> Vali <strong>View > Task Usage</strong> või <strong>View > Resource Usage</strong>.</p>
+                <p><strong>Milleks kasulik:</strong> See vaade on vajalik täpseks planeerimiseks. Siin saab näha ja muuta töötunde iga päeva kohta eraldi. See annab projektijuhile täieliku kontrolli tööaja üle.</p>
+                <div class="image-wrapper">
+                    <img src="images/diagramm3.png" alt="Kasutuse diagramm">
                 </div>
             </div>
         </section>
 
         <section class="content-section fade-in">
             <div class="card highlight-card">
-                <h2>Kuidas need aitavad projekti jälgida?</h2>
-                <p>Diagrammid näitavad kohe, kui mõni ülesanne hilineb või kui ressursid on ülekoormatud. See on parim viis projekti staatuse esitlemiseks.</p>
-                <div class="image-wrapper">
-                    <img src="images/diagramm3.png" alt="Analüüs">
-                </div>
+                <h2>Kokkuvõte</h2>
+                <p>Õige diagrammi valik sõltub sinu eesmärgist. Kasuta Gantti graafikut tähtaegade jälgimiseks, Resource Graphi koormuse kontrollimiseks ja Usage vaateid detailseks tundide planeerimiseks. Kombineerides neid vaateid, saad oma projekti edukalt kontrolli all hoida.</p>
+                <a href="#top" class="btn secondary-btn">Tagasi üles</a>
             </div>
         </section>
     </main>
 
     <footer class="site-footer">
-        <p>Õppematerjal &copy; 2025 | Autor: Marek Lukk</p>
+        <p>Õppematerjal: “Microsoft Projecti diagrammid” &copy; 2025</p>
+        <p>Autor: Marek Lukk</p>
     </footer>
 </body>
 </html>
