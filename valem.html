@@ -2,12 +2,12 @@
 <html lang="et">
 <head>
     <meta charset="UTF-8">
-    <title>MS Project - Arvutusväli</title>
+    <title>MS Project - Arvutusväljad</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header class="hero">
+    <header class="hero" id="top">
         <nav class="main-nav">
             <div class="logo">MS Project</div>
             <ul class="nav-links">
@@ -17,8 +17,8 @@
             </ul>
         </nav>
         <div class="hero-content">
-            <h1 class="fade-in">Arvutusvälja lisamine projekti</h1>
-            <p class="fade-in">Õpi kasutama valemeid, et muuta oma projekt targemaks.</p>
+            <h1 class="fade-in">Arvutusvälja lisamine ja valemid</h1>
+            <p class="fade-in">Kohandatud väljad aitavad automatiseerida andmete töötlemist ja muuta projekti haldamise kiiremaks.</p>
         </div>
     </header>
 
@@ -26,7 +26,7 @@
         <section class="content-section fade-in">
             <div class="card">
                 <h2>Mis on arvutusväli?</h2>
-                <p>Arvutusväli on Microsoft Projectis "Custom Field", kus saad kasutada oma valemeid. See on kasulik, kui soovid automaatselt arvutada kulusid, riske või muid näitajaid, mida tavaline tabel ei näita.</p>
+                <p>Arvutusväli (Custom Field) on Microsoft Projecti funktsioon, mis võimaldab luua uusi veergusid oma reeglitega. See on kasulik, kui tavalised väljad ei paku piisavalt infot, näiteks riskitaseme või täiendavate kulude arvutamiseks.</p>
                 <div class="image-wrapper">
                     <img src="images/valem1.png" alt="Arvutusvälja seadistamine">
                 </div>
@@ -36,26 +36,51 @@
         <section class="content-section fade-in">
             <div class="card">
                 <h2>Kuidas lisada valemit?</h2>
-                <p>Vali menüüst <strong>Project > Custom Fields</strong>. Vali väli ja klõpsa nupule <strong>Formula</strong>. Siia saad sisestada matemaatilise tehte, näiteks korrutada ülesande kestuse ressursi hinnaga.</p>
+                <p>Valemi seadistamine on loogiline protsess. Järgi neid samme:</p>
+                <p>
+                    1. Ava ülemisest menüüst vahekaart <strong>Project</strong> ja vali <strong>Custom Fields</strong>.<br>
+                    2. Vali välja tüüp, mida soovid luua (näiteks <em>Number</em>, <em>Text</em> või <em>Cost</em>).<br>
+                    3. Vali nimekirjast vaba väli ja vajuta nupule <strong>Rename</strong>, et anda sellele nimi.<br>
+                    4. Klõpsa nupul <strong>Formula</strong>, et avada valemi sisestamise aken.<br>
+                    5. Sisesta vajalik matemaatiline tehe või funktsioon ja vajuta OK.
+                </p>
                 <div class="image-wrapper">
-                    <img src="images/valem2.png" alt="Valemi sisestamine">
+                    <img src="images/valem2.png" alt="Valemi sisestamine aknas">
                 </div>
             </div>
         </section>
 
         <section class="content-section fade-in">
+            <div class="card">
+                <h2>Valemi näide: Ülesande pikkuse kontroll</h2>
+                <p>Kõige sagedamini kasutatakse tingimuslikke valemeid (IF-funktsioon). Näiteks saame kontrollida, kas töö kestab kauem kui 5 päeva.</p>
+                <p><strong>Valem:</strong> <code>IIf([Duration] > 5*480; "Pikk töö"; "Lühike töö")</code></p>
+                <p>Selles näites kontrollib programm ülesande kestust. Kui see on pikem kui 5 tööpäeva, kuvatakse tekst "Pikk töö", vastasel juhul "Lühike töö". See aitab meeskonnal kohe märgata mahukaid ülesandeid.</p>
+            </div>
+        </section>
+
+        <section class="content-section fade-in">
             <div class="card highlight-card">
-                <h2>Milleks see kasulik on?</h2>
-                <p>See säästab aega ja vähendab vigu. Sa ei pea andmeid käsitsi arvutama — kui muudad ülesande aega, siis arvutusväli uueneb automaatselt.</p>
+                <h2>Miks see on kasulik projektijuhile?</h2>
+                <p>Kui valem on sisestatud, kuvatakse tulemus tabelis automaatselt iga rea kohta. Sa ei pea enam käsitsi andmeid arvutama või kontrollima.</p>
+                <p><strong>Peamised eelised:</strong></p>
+                <ul>
+                    <li><strong>Säästab aega:</strong> Arvutused toimuvad reaalajas.</li>
+                    <li><strong>Väldib vigu:</strong> Inimlikud eksimused arvutamisel jäävad ära.</li>
+                    <li><strong>Parem ülevaade:</strong> Saad kohe visuaalse kinnituse projekti seisust.</li>
+                </ul>
                 <div class="image-wrapper">
-                    <img src="images/valem3.png" alt="Tulemus">
+                    <img src="images/valem3.png" alt="Valemi tulemus tabelis">
                 </div>
+                <br>
+                <a href="#top" class="btn secondary-btn">Tagasi üles</a>
             </div>
         </section>
     </main>
 
     <footer class="site-footer">
-        <p>Õppematerjal &copy; 2025 | Autor: Marek Lukk</p>
+        <p>Õppematerjal: “Valemid Microsoft Projectis” &copy; 2025</p>
+        <p>Autor: Marek Lukk</p>
     </footer>
 </body>
 </html>
