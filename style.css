@@ -409,3 +409,37 @@ main {
 .close-modal:hover {
     color: #3b82f6;
 }
+/* --- Дополнительные стили для навигации между страницами --- */
+
+/* Стиль для активной ссылки (на какой странице находимся) */
+.nav-links a.active-link {
+    color: #f9fafb;
+    background: var(--accent-gradient);
+}
+
+/* Фиксация меню, чтобы оно всегда было сверху при скролле на всех страницах */
+.main-nav {
+    position: fixed; /* Изменил с sticky на fixed для надежности на разных страницах */
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    max-width: 1100px;
+}
+
+/* Добавим отступ в hero, чтобы меню не перекрывало заголовок */
+.hero {
+    padding-top: 100px;
+}
+
+/* Чтобы анимация fade-in работала и на новых страницах */
+.content-section {
+    opacity: 0;
+    transform: translateY(18px);
+    animation: fadeInUp 0.8s var(--transition-normal) forwards;
+}
+
+/* Если на странице нет hero с большой высотой (для внутренних страниц) */
+.hero {
+    min-height: 50vh; 
+}
