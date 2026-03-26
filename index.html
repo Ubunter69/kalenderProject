@@ -1,30 +1,26 @@
-<!-- index.html -->
 <!DOCTYPE html>
 <html lang="et">
 <head>
     <meta charset="UTF-8">
-    <title>Kuidas luua kalender Microsoft Project'is</title>
+    <title>MS Project - Kalender</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header class="hero" id="top">
         <nav class="main-nav">
-            <div class="logo">MS Project Kalender</div>
+            <div class="logo">MS Project</div>
             <ul class="nav-links">
-                <li><a href="#section1">Uus kalender</a></li>
-                <li><a href="#section2">Tööpäevad</a></li>
-                <li><a href="#section3">Tööaeg</a></li>
-                <li><a href="#section4">Eripäevad</a></li>
-                <li><a href="#section5">Kalendri kasutamine</a></li>
-                <li><a href="#impact">Mõju ajakavale</a></li>
+                <li><a href="index.html" class="active-link">Kalender</a></li>
+                <li><a href="valem.html">Arvutusväli</a></li>
+                <li><a href="diagramm.html">Diagrammid</a></li>
             </ul>
         </nav>
 
         <div class="hero-content">
-            <h1>Kuidas luua kalender Microsoft Project'is</h1>
-            <p>See leht aitab sul samm-sammult luua ja seadistada kalendri oma projektile.</p>
-            <a href="#section1" class="btn primary-btn">Alusta õppimist</a>
+            <h1 class="fade-in">Kuidas luua kalender Microsoft Project'is</h1>
+            <p class="fade-in">See leht aitab sul samm-sammult luua ja seadistada kalendri oma projektile.</p>
+            <a href="#section1" class="btn primary-btn fade-in">Alusta õppimist</a>
         </div>
     </header>
 
@@ -32,159 +28,16 @@
         <section id="section1" class="content-section fade-in">
             <div class="card">
                 <h2>1. Uue kalendri loomine</h2>
-                <p>
-                    Kõigepealt ava Microsoft Project ja vali ülemisest menüüst 
-                    <strong>Project &gt; Change Working Time</strong>. 
-                    Seal näed vaikimisi kalendreid. Kui tahad teha oma kalendri, 
-                    klõpsa nupul <strong>Create New Calendar</strong>. 
-                    Pane kalendrile nimi, mis sobib sinu projektiga, näiteks 
-                    “Ehitusprojekt 2025”.
-                </p>
-                <p>
-                    Tavaliselt on hea luua eraldi kalender, kui sinu projektis on 
-                    teistsugused tööpäevad või tööajad kui tavaline 8–17 tööpäev.
-                </p>
+                <p>Kõigepealt ava Microsoft Project ja vali ülemisest menüüst <strong>Project > Change Working Time</strong>. Seal näed vaikimisi kalendreid. Kui tahad teha oma kalendri, klõpsa nupul <strong>Create New Calendar</strong>.</p>
                 <div class="image-wrapper">
-                    <img src="images/img1.png" alt="Uue kalendri loomine Microsoft Project'is">
+                    <img src="images/img1.png" alt="Uue kalendri loomine">
                 </div>
             </div>
         </section>
+        </main>
 
-        <section id="section2" class="content-section fade-in">
-            <div class="card">
-                <h2>2. Tööpäevade muutmine</h2>
-                <p>
-                    Kui kalender on loodud, saad muuta tööpäevi. 
-                    Akna ülaosas vali vahekaart <strong>Work Weeks</strong> ja 
-                    klõpsa <strong>Details</strong>. 
-                    Nüüd saad valida, millised nädalapäevad on tööpäevad ja 
-                    millised on puhkepäevad.
-                </p>
-                <p>
-                    Näiteks, kui sinu meeskond töötab ka laupäeviti, 
-                    märgi laupäev tööpäevaks. Kui pühapäev on alati vaba, 
-                    jäta see mittevõtupäevaks. Nii näitab ajakava realistlikku töögraafikut.
-                </p>
-                <div class="image-wrapper">
-                    <img src="images/img2.png" alt="Tööpäevade muutmine kalendris">
-                </div>
-            </div>
-        </section>
-
-        <section id="section3" class="content-section fade-in">
-            <div class="card">
-                <h2>3. Tööaja muutmine</h2>
-                <p>
-                    Lisaks tööpäevadele saad muuta ka tööaega. 
-                    Sama akna sees vali päevad, mida tahad muuta, 
-                    ja sisesta uued tööaja vahemikud, näiteks 
-                    9:00–18:00 koos lõunapausiga.
-                </p>
-                <p>
-                    Kui sinu projektis on vahetustega töö, 
-                    võid lisada mitu ajavahemikku ühele päevale. 
-                    Oluline on, et tööajad vastaksid päris elule, 
-                    sest sellest sõltub, kui kiiresti ülesanded valmis saavad.
-                </p>
-                <div class="image-wrapper">
-                    <img src="images/img3.png" alt="Tööaja muutmine Microsoft Project'is">
-                </div>
-            </div>
-        </section>
-
-        <section id="section4" class="content-section fade-in">
-            <div class="card">
-                <h2>4. Eripäevade lisamine</h2>
-                <p>
-                    Projektis on tihti eripäevi, näiteks riigipühad, 
-                    ettevõtte üritused või planeeritud hoolduspäevad. 
-                    Need tuleb kalendrisse lisada, et programm ei planeeriks 
-                    nendel päevadel tööd.
-                </p>
-                <p>
-                    Vali kalendriaknas konkreetne kuupäev ja märgi see 
-                    mittevõtupäevaks. Võid lisada ka nime, näiteks 
-                    “Jaanipäev” või “Firma koolituspäev”. 
-                    Nii on hiljem lihtne aru saada, miks sel päeval tööd ei tehta.
-                </p>
-                <div class="image-wrapper">
-                    <img src="images/img4.png" alt="Eripäevade lisamine kalendrisse">
-                </div>
-            </div>
-        </section>
-
-        <section id="section5" class="content-section fade-in">
-            <div class="card">
-                <h2>5. Kalendri kasutamine projektis</h2>
-                <p>
-                    Kui kalender on valmis, pead selle oma projektiga siduma. 
-                    Ava uuesti <strong>Project Information</strong> ja vali 
-                    rippmenüüst oma loodud kalender. 
-                    Nüüd kasutab kogu projekt seda kalendrit vaikimisi.
-                </p>
-                <p>
-                    Soovi korral saad määrata ka erinevatele ressurssidele 
-                    oma kalendri. Näiteks kontoritöötajatel on üks kalender 
-                    ja ehitusmeeskonnal teine. See aitab luua täpsema ajakava.
-                </p>
-   <div class="image-wrapper">
-    <img src="images/img5.png" alt="Kalendri kasutamine projektis">
-</div>
-
-<div class="image-wrapper">
-    <img src="images/img6.png" alt="Kalendri kasutamine projektis" class="zoom-img">
-</div>
-            </div>
-        </section>
-
-        <section id="impact" class="content-section fade-in">
-            <div class="card highlight-card">
-                <h2>Kuidas kalender mõjutab ajakava</h2>
-                <p>
-                    Kalender on projekti ajakava alus. 
-                    Kui tööpäevad või tööajad on valesti, 
-                    näitab Microsoft Project vale lõpptähtaega. 
-                    See võib tekitada segadust nii meeskonnas kui ka kliendi jaoks.
-                </p>
-                <p>
-                    Kui kalender on õigesti seadistatud, 
-                    arvutab programm automaatselt, millal ülesanded saavad valmis, 
-                    kui palju aega need võtavad ja millal projekt lõpeb. 
-                    Nii saad paremini planeerida ressursse ja vältida ületunde.
-                </p>
-                <a href="#top" class="btn secondary-btn">Tagasi üles</a>
-            </div>
-        </section>
-    </main>
-
-<footer class="site-footer">
-    <p>Õppematerjal: “Kuidas luua kalender Microsoft Project'is” &copy; 2025</p>
-    <p>Autor: Marek Lukk</p>
-    <p>Lihtne juhend tudengitele ja alustavatele projektijuhtidele.</p>
-</footer>
-    <div id="imgModal" class="modal">
-    <span class="close-modal">&times;</span>
-    <img class="modal-content" id="modalImg">
-</div>
-
-<script>
-    const modal = document.getElementById("imgModal");
-    const modalImg = document.getElementById("modalImg");
-    const zoomImg = document.querySelector(".zoom-img");
-    const closeBtn = document.querySelector(".close-modal");
-
-    zoomImg.onclick = function () {
-        modal.style.display = "flex";
-        modalImg.src = this.src;
-    }
-
-    closeBtn.onclick = function () {
-        modal.style.display = "none";
-    }
-
-    modal.onclick = function (e) {
-        if (e.target === modal) modal.style.display = "none";
-    }
-</script>
+    <footer class="site-footer">
+        <p>Õppematerjal &copy; 2025 | Autor: Marek Lukk</p>
+    </footer>
 </body>
 </html>
